@@ -1,0 +1,9 @@
+# Don't track content of these folders
+deployment/
+
+# Don't track files with these extensions
+*.log
+*.json
+
+# Ignore single files
+Emailer.java

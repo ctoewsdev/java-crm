@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<Configuration> 
+  <Appenders> 
+    <File name="FileLogger" fileName="out.log" append="true"> 
+      <PatternLayout pattern="%d{MM dd yyyy HH:mm}{PST} %t %-5p %c{2} (%F:%L) - %m%n"/> 
+    </File> 
+    <Console name="STDOUT" target="SYSTEM_OUT"> 
+      <PatternLayout pattern="%m%n"/> 
+    </Console> 
+  </Appenders> 
+  <Loggers> 
+    <Root level="debug"> 
+      <AppenderRef ref="STDOUT"/> 
+      <AppenderRef ref="FileLogger"/> 
+    </Root> 
+  </Loggers> 
+</Configuration>
